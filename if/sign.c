@@ -1,5 +1,4 @@
 // Take a number and display its sign
-
 #include <stdio.h>
 
 void main()
