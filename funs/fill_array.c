@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-void zero(int * a)
+void zero(int a[])
 {
  int i;
 
