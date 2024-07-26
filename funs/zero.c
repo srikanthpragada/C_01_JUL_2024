@@ -1,3 +1,5 @@
+// Pass by value
+
 #include <stdio.h>
 
 void zero(int num)
