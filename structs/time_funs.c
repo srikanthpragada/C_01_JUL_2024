@@ -21,6 +21,11 @@ int compare(struct time t1, struct time t2)
     return  totalseconds(t1) - totalseconds(t2);
 }
 
+struct time max(struct time t1, struct time t2)
+{
+     return  compare(t1,t2) > 0 ? t1 : t2;
+}
+
 void main()
 {
   struct time t1 = {1,2,3};
