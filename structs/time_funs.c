@@ -26,6 +26,13 @@ struct time max(struct time t1, struct time t2)
      return  compare(t1,t2) > 0 ? t1 : t2;
 }
 
+void setzero(struct time * pt)
+{
+   pt->hours = 0;
+   pt->mins = 0;
+   pt->secs = 0;
+}
+
 void main()
 {
   struct time t1 = {1,2,3};
@@ -33,6 +40,9 @@ void main()
 
 
           print(t1);
-          printf("%d", totalseconds(t1));
+          printf("%d\n", totalseconds(t1));
+
+          setzero(&t1);
+          print(t1);
 
 }
